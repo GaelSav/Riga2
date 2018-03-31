@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 public class ToolGui {
 
     private JButton _mustSeenButton = new JButton("Must-seen");
-    private static String RIGA_MUST_SEEN = "Riga must seen.txt";
+    private static String RIGA_MUST_SEEN_FILENAME = "Riga must seen.txt";
 
     public void addComponentsToPane(Container pane) {
         pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
@@ -38,7 +38,7 @@ public class ToolGui {
     }
 
     public void mustSeenButtonPressed() {
-        File f = new File(RIGA_MUST_SEEN);
+        File f = new File(RIGA_MUST_SEEN_FILENAME);
         Desktop desktop = Desktop.getDesktop();
         try {
             desktop.open(f);
