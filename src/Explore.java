@@ -2,8 +2,10 @@ public class Explore {
 
     public static void main(String[] args) {
 
-        //show GUI
-        javax.swing.SwingUtilities.invokeLater(() -> ToolGui.createAndShowGUI());
+        //create GUI
+        ToolGui tGui = new ToolGui();
+        //display GUI
+        javax.swing.SwingUtilities.invokeLater(() -> tGui.createAndShowGUI());
 
     }
 

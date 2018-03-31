@@ -5,20 +5,22 @@ import javax.swing.JFrame;
 
 public class ToolGui {
 
-    public static void addComponentsToPane(Container pane) {
+    private JButton _mustSeenButton = new JButton("Must-seen");
+
+    public void addComponentsToPane(Container pane) {
         pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
 
-        addAButton("Must-seen", pane);
+        addAButton(_mustSeenButton, pane);
+        _mustSeenButton.addActionListener(e -> mustSeenButtonPressed());
 
     }
 
-    public static void addAButton(String text, Container container) {
-        JButton button = new JButton(text);
+    public void addAButton(JButton button, Container container) {
         button.setAlignmentX(Component.CENTER_ALIGNMENT);
         container.add(button);
     }
 
-    public static void createAndShowGUI() {
+    public void createAndShowGUI() {
         //Create and set up the window.
         JFrame frame = new JFrame("Riga");
         frame.setPreferredSize(new Dimension(400, 150));
@@ -30,6 +32,10 @@ public class ToolGui {
         //Display the window.
         frame.pack();
         frame.setVisible(true);
+    }
+
+    public void mustSeenButtonPressed() {
+        System.out.println("h");
     }
 }
 
