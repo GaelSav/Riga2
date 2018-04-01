@@ -25,7 +25,7 @@ public class ToolGui {
 
     public void createAndShowGUI() {
         //Create and set up the window.
-        JFrame frame = new JFrame("Riga Trip");
+        JFrame frame = new JFrame("Riga");
         frame.setPreferredSize(new Dimension(400, 90));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
