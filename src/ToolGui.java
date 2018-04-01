@@ -8,6 +8,7 @@ import javax.swing.JFrame;
 public class ToolGui {
 
     private JButton _mustSeenButton = new JButton("Must-seen");
+    private JButton _conversationsButton = new JButton("Conversations");
     private static String RIGA_MUST_SEEN_FILENAME = "Riga must-seen.txt";
     private static String RIGA_CONVERSATION_FILENAME = "Riga conversations.txt";
 
@@ -16,6 +17,9 @@ public class ToolGui {
 
         addAButton(_mustSeenButton, pane);
         _mustSeenButton.addActionListener(e -> mustSeenButtonPressed());
+
+        addAButton(_conversationsButton, pane);
+        _conversationsButton.addActionListener(e -> conversationButtonPressed());
 
     }
 
@@ -40,6 +44,16 @@ public class ToolGui {
 
     public void mustSeenButtonPressed() {
         File f = new File(RIGA_MUST_SEEN_FILENAME);
+        Desktop desktop = Desktop.getDesktop();
+        try {
+            desktop.open(f);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void conversationButtonPressed() {
+        File f = new File(RIGA_CONVERSATION_FILENAME);
         Desktop desktop = Desktop.getDesktop();
         try {
             desktop.open(f);
