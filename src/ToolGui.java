@@ -9,8 +9,8 @@ public class ToolGui {
 
     private JButton _mustSeenButton = new JButton("Must-seen");
     private JButton _conversationsButton = new JButton("Conversations");
-    private static String RIGA_MUST_SEEN_FILENAME = "Riga must-seen.txt";
-    private static String RIGA_CONVERSATION_FILENAME = "Riga conversations.txt";
+    private static String RIGA_MUST_SEEN_FILENAME = "C:\\Users\\gaels\\Documents\\MonCode\\Riga\\Riga must-seen.txt";
+    private static String RIGA_CONVERSATION_FILENAME = "C:\\Users\\gaels\\Documents\\MonCode\\Riga\\Riga conversations.txt";
 
     public void addComponentsToPane(Container pane) {
         pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));

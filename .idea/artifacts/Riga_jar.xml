@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Riga:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Riga_jar</output-path>
+    <root id="archive" name="Riga.jar">
+      <element id="module-output" name="Riga" />
+    </root>
+  </artifact>
+</component>
