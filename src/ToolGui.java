@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 public class ToolGui {
 
     private JButton _mustSeenButton = new JButton("Must-seen");
-    private static String RIGA_MUST_SEEN_FILENAME = "Riga must-seen.txt";
+    private static String RIGA_MUST_SEEN_FILENAME = "C:\\Users\\gaels\\Documents\\MonCode\\Riga\\Riga must-seen.txt";
 
     public void addComponentsToPane(Container pane) {
         pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
