@@ -32,7 +32,6 @@ public class ToolGui {
         //Create and set up the window.
         JFrame frame = new JFrame("Riga trip");
         frame.setPreferredSize(new Dimension(400, 120));
-
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Set up the content pane.
